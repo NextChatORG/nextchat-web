@@ -2,10 +2,16 @@
   <Head>
     <title>{{ globalTitle }}</title>
     <meta name="description" :content="globalDescription" />
+    <meta
+      name="robots"
+      :content="`${index === false ? 'index' : 'noindex'}, ${
+        follow === false ? 'follow' : 'nofollow'
+      }`"
+    />
     <link rel="canonical" :content="canonicalUrl || globalUrl" />
 
     <meta property="og:site_name" content="NextChat" />
-    <meta property="og:title" :content="ogTitle || globalTtitle" />
+    <meta property="og:title" :content="ogTitle || globalTitle" />
     <meta property="og:type" :content="ogType || 'website'" />
     <meta
       property="og:description"
@@ -18,6 +24,7 @@
     <meta name="twitter:site" content="@NextChatORG" />
     <meta name="twitter:creator" content="@daschdev" />
   </Head>
+  <the-header></the-header>
   <main>
     <slot></slot>
   </main>
@@ -26,15 +33,18 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Head } from '@vueuse/head'
+import TheHeader from '@/components/TheHeader.vue'
 
 export default defineComponent({
   name: 'LayoutDefault',
-  components: { Head },
+  components: { Head, TheHeader },
   props: {
     title: String,
+    follow: Boolean,
+    index: Boolean,
     defaultTitle: Boolean,
     description: String,
-    ogTtitle: String,
+    ogTitle: String,
     ogType: String,
     ogUrl: String,
     ogImage: String,

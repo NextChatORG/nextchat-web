@@ -14,6 +14,7 @@
     "vue": "^3.1.1"
   },
   "devDependencies": {
+    "@types/vfile-message": "^2.0.0",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.1.1",
     "@vueuse/head": "^0.6.0",
