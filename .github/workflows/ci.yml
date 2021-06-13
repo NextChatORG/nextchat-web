@@ -25,8 +25,8 @@ jobs:
         run: npm install --global yarn
 
       - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: yarn Cache
         uses: actions/cache@v2
