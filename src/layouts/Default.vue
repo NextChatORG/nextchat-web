@@ -36,7 +36,8 @@ export default defineComponent({
     },
     hDescription: {
       type: String,
-      default: '',
+      default:
+        'Connect with people around the world in real time in a private and secure way',
     },
     hUrl: {
       type: String,
@@ -47,6 +48,10 @@ export default defineComponent({
       default: 'NextChat',
     },
     hImage: String,
+    hType: {
+      type: String,
+      default: 'website',
+    },
   },
   setup(props) {
     let globalTitle = props.hTitleTemplate
