@@ -2,13 +2,26 @@
   "name": "nextchat-web",
   "version": "0.1.0",
   "license": "GPL-2.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "format": "prettier **/*.{vue,ts,json,html} --write --ignore-path .gitignore",
-    "format:check": "prettier **/*.{vue,ts,json,html} --check --ignore-path .gitignore",
+    "format": "prettier **/*.{vue,ts,json,html,scss} --write --ignore-path .gitignore",
+    "format:check": "prettier **/*.{vue,ts,json,html,scss} --check --ignore-path .gitignore",
     "postinstall": "husky install"
+  },
+  "engines": {
+    "node": ">=12 <16"
+  },
+  "homepage": "https://www.nextchat.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NextChatORG/nextchat-web"
+  },
+  "bugs": {
+    "url": "https://github.com/NextChatORG/nextchat-web/issues",
+    "email": "contact@nextchat.org"
   },
   "dependencies": {
     "vue": "^3.1.1"
