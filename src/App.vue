@@ -24,7 +24,7 @@ body,
 #app {
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
-  color: $color-gray-900;
+  color: $color-gray-800;
 
   code {
     font-family: 'JetBrains Mono', monospace;

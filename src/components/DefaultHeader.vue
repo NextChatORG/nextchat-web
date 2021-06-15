@@ -47,7 +47,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'TheHeader',
+  name: 'DefaultHeader',
   setup() {},
 })
 </script>
@@ -129,6 +129,17 @@ export default defineComponent({
 
       @include breakpoints(lg) {
         margin: 0 0.8rem;
+      }
+
+      a {
+        color: $color-indigo-500;
+
+        &:hover {
+          color: $color-deep-purple-500;
+          transition: color 0.3s ease-in-out;
+        }
+
+        font-size: 24px;
       }
     }
   }
