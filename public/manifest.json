@@ -1,6 +1,7 @@
 {
   "name": "NextChat",
   "short_name": "NextChat",
+  "description": "Messages social network",
   "license": "GPL-2.0",
   "theme_color": "#3f51b5",
   "display": "standalone",

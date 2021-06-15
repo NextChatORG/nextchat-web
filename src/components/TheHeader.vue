@@ -13,7 +13,7 @@
           <router-link to="/">Services</router-link>
         </li>
         <li>
-          <img src="/icon.svg" alt="NextChat Icon" />
+          <img src="/icons/48x48.png" alt="NextChat Icon" />
         </li>
         <li>
           <router-link to="/">Stats</router-link>
