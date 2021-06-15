@@ -29,9 +29,15 @@
     <div class="header__social-media">
       <ul>
         <li>
-          <a href="//twitter.com/NextChatORG" target="__blank">Twitter</a>
+          <a href="//twitter.com/NextChatORG" target="__blank"
+            ><font-awesome-icon :icon="['fab', 'twitter']"
+          /></a>
         </li>
-        <li><a href="//github.com/NextChatORG" target="__blank">Github</a></li>
+        <li>
+          <a href="//github.com/NextChatORG" target="__blank"
+            ><font-awesome-icon :icon="['fab', 'github']"
+          /></a>
+        </li>
       </ul>
     </div>
   </header>

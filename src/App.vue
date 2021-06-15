@@ -11,10 +11,20 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import '~@/scss/fonts', '~@/scss/normalize';
+@import '~@/scss/fonts', '~@/scss/normalize', '~@/scss/colors';
+
+html,
+body,
+#app {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
 
 #app {
   font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  color: $color-gray-900;
 
   code {
     font-family: 'JetBrains Mono', monospace;
