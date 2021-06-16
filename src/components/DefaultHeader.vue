@@ -4,18 +4,18 @@
     <div class="header__navigation">
       <ul>
         <li>
-          <router-link to="/" :title="t('header.home.title')">{{
-            t('header.home.text')
+          <router-link to="/" :title="$t('header.home.title')">{{
+            $t('header.home.text')
           }}</router-link>
         </li>
         <li>
-          <router-link to="/#download" :title="t('header.download.title')">{{
-            t('header.download.text')
+          <router-link to="/#download" :title="$t('header.download.title')">{{
+            $t('header.download.text')
           }}</router-link>
         </li>
         <li>
-          <router-link to="/" :title="t('header.services.title')">{{
-            t('header.services.text')
+          <router-link to="/" :title="$t('header.services.title')">{{
+            $t('header.services.text')
           }}</router-link>
         </li>
         <li>
@@ -24,21 +24,21 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/" :title="t('header.stats.title')">{{
-            t('header.stats.text')
+          <router-link to="/" :title="$t('header.stats.title')">{{
+            $t('header.stats.text')
           }}</router-link>
         </li>
         <li>
           <router-link to="/"
-            ><router-link to="/" :title="t('header.contributors.title')">{{
-              t('header.contributors.text')
+            ><router-link to="/" :title="$t('header.contributors.title')">{{
+              $t('header.contributors.text')
             }}</router-link></router-link
           >
         </li>
         <li>
           <router-link to="/"
-            ><router-link to="/" :title="t('header.blog.title')">{{
-              t('header.blog.text')
+            ><router-link to="/" :title="$t('header.blog.title')">{{
+              $t('header.blog.text')
             }}</router-link></router-link
           >
         </li>
@@ -63,17 +63,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'DefaultHeader',
-  setup() {
-    const { t } = useI18n()
-
-    return {
-      t,
-    }
-  },
+  setup() {},
 })
 </script>
 

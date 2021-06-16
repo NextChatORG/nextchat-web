@@ -16,7 +16,9 @@ library.add(fas, fab, far)
 const head = createHead()
 
 const i18n = createI18n({
-  locale: navigator.language,
+  legacy: false,
+  globalInjection: true,
+  locale: localStorage.getItem('locale') || navigator.language,
   fallbackLocale: 'en',
   messages,
 })
