@@ -185,7 +185,7 @@ explicitly, e.g.
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -193,7 +193,7 @@ explicitly, e.g.
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Italic.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -201,7 +201,7 @@ explicitly, e.g.
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Medium.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -209,7 +209,8 @@ explicitly, e.g.
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Medium-Italic.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Medium-Italic.woff2')
+    format('woff2');
 }
 
 @font-face {
@@ -217,7 +218,7 @@ explicitly, e.g.
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -225,7 +226,8 @@ explicitly, e.g.
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold-Italic.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold-Italic.woff2')
+    format('woff2');
 }
 
 @font-face {
@@ -233,7 +235,8 @@ explicitly, e.g.
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2')
+    format('woff2');
 }
 
 @font-face {
@@ -241,5 +244,6 @@ explicitly, e.g.
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url('../fonts/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.woff2');
+  src: url('../fonts/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.woff2')
+    format('woff2');
 }

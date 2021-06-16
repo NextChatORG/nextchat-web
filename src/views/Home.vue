@@ -7,17 +7,36 @@
         secure way
       </h2>
     </div>
-    <div id="download"></div>
+    <div id="download">
+      <base-button href="/asd"
+        ><font-awesome-icon :icon="['fab', 'apple']" level="secondary-link" />
+        Download iOS App</base-button
+      >
+      <base-button href="/asd"
+        ><font-awesome-icon :icon="['fab', 'android']" /> Download Android
+        App</base-button
+      >
+    </div>
+    <select v-model="$i18n.locale">
+      <option
+        v-for="locale of $i18n.availableLocales"
+        :key="locale"
+        :value="locale"
+      >
+        {{ locale }}
+      </option>
+    </select>
   </layout-default>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import LayoutDefault from '@/layouts/Default.vue'
+import BaseButton from '@/components/BaseButton.vue'
 
 export default defineComponent({
   name: 'Home',
-  components: { LayoutDefault },
+  components: { LayoutDefault, BaseButton },
   setup() {},
 })
 </script>
@@ -30,11 +49,11 @@ export default defineComponent({
   width: 100%;
   text-align: center;
 
-  @include breakpoints(md) {
+  @include breakpoint(md) {
     padding: 2rem 15%;
   }
 
-  @include breakpoints(lg) {
+  @include breakpoint(lg) {
     padding: 4rem 20%;
   }
 
@@ -42,11 +61,11 @@ export default defineComponent({
     margin: 0 0 0.4rem 0;
     font-size: 2.6rem;
 
-    @include breakpoints(md) {
+    @include breakpoint(md) {
       font-size: 3rem;
     }
 
-    @include breakpoints(lg) {
+    @include breakpoint(lg) {
       font-size: 3.6rem;
     }
   }
@@ -57,7 +76,7 @@ export default defineComponent({
     margin: 0;
     color: $color-gray-500;
 
-    @include breakpoints(md) {
+    @include breakpoint(md) {
       font-size: 1.5rem;
     }
   }

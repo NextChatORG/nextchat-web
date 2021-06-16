@@ -2,8 +2,9 @@
   <Head>
     <title>{{ globalTitle }}</title>
     <meta name="description" :content="hDescription" />
+    <link rel="canonical" :href="hUrl" />
 
-    <meta property="og:locale" content="en" />
+    <meta property="og:locale" :content="$i18n.locale" />
     <meta property="og:type" :content="hType" />
     <meta property="og:title" :content="globalTitle" />
     <meta property="og:site_name" :content="hSitename" />
@@ -15,7 +16,7 @@
     <meta name="twitter:card" content="summary_large_image" />
   </Head>
   <default-header />
-  <main>
+  <main :key="route.path">
     <slot />
   </main>
 </template>
@@ -24,6 +25,7 @@
 import { defineComponent } from 'vue'
 import { Head } from '@vueuse/head'
 import DefaultHeader from '@/components/DefaultHeader.vue'
+import { useRoute } from 'vue-router'
 
 export default defineComponent({
   name: 'LayoutDefault',
@@ -54,6 +56,7 @@ export default defineComponent({
     },
   },
   setup(props) {
+    const route = useRoute()
     let globalTitle = props.hTitleTemplate
 
     for (const prop in props) {
@@ -62,6 +65,7 @@ export default defineComponent({
 
     return {
       globalTitle,
+      route,
     }
   },
 })

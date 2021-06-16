@@ -7,6 +7,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',
+  setup() {},
 })
 </script>
 
@@ -21,10 +22,22 @@ body,
   min-height: 100vh;
 }
 
+html,
+body,
+#app,
+div,
+section,
+header,
+footer {
+  scrollbar-width: auto;
+  scrollbar-color: $color-indigo-300 $color-indigo-50;
+}
+
 #app {
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   color: $color-gray-800;
+  overflow: hidden auto;
 
   ::selection {
     color: $color-gray-50;

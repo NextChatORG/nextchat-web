@@ -71,42 +71,30 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '~@/scss/colors', '~@/scss/breakpoints';
+@import '~@/scss/base';
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.2rem 0.6rem;
+  @include flex($content: space-between);
+  @include breakpoints-value(
+    padding,
+    0.2rem 0.6rem,
+    0.6rem 1rem,
+    0.8rem 1.4rem
+  );
   user-select: none;
 
-  @include breakpoints(md) {
-    padding: 0.6rem 1rem;
-  }
-
-  @include breakpoints(lg) {
-    padding: 0.8rem 1.4rem;
-  }
-
   &__navigation ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+    @include list-reset;
+    @include flex;
 
     li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style: none;
-      margin: 0.8rem;
-
-      @include breakpoints(md) {
-        margin: 0 0.8rem;
-      }
-
-      @include breakpoints(lg) {
-        margin: 0 1rem;
-      }
+      @include flex;
+      @include breakpoints-value(
+        margin,
+        0 0.2rem,
+        $md: 0 0.4rem,
+        $lg: 0 0.8rem
+      );
 
       a {
         text-decoration: none;
@@ -122,32 +110,21 @@ export default defineComponent({
     }
 
     li > img {
-      width: 36px;
-
-      @include breakpoints(md) {
-        width: 40px;
-      }
-
-      @include breakpoints(lg) {
-        width: 48px;
-      }
+      @include breakpoints-value(width, 36px, $md: 40px, $lg: 48px);
     }
   }
 
   &__social-media ul {
-    display: flex;
+    @include flex;
+    @include list-reset;
 
     li {
-      list-style: none;
-      margin: 0 0.2rem;
-
-      @include breakpoints(md) {
-        margin: 0 0.6rem;
-      }
-
-      @include breakpoints(lg) {
-        margin: 0 0.8rem;
-      }
+      @include breakpoints-value(
+        margin,
+        0 0.2rem,
+        $md: 0 0.6rem,
+        $lg: 0 0.8rem
+      );
 
       a {
         color: $color-indigo-500;
