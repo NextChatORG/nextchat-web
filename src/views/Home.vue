@@ -7,6 +7,7 @@
         secure way
       </h2>
     </div>
+    <div id="download"></div>
   </layout-default>
 </template>
 
@@ -25,10 +26,21 @@ export default defineComponent({
 @import '~@/scss/colors', '~@/scss/breakpoints';
 
 #about {
+  padding: 1rem 2%;
+  width: 100%;
   text-align: center;
+
+  @include breakpoints(md) {
+    padding: 2rem 15%;
+  }
+
+  @include breakpoints(lg) {
+    padding: 4rem 20%;
+  }
+
   h1 {
-    margin-bottom: 0.4rem;
-    font-size: 2rem;
+    margin: 0 0 0.4rem 0;
+    font-size: 2.6rem;
 
     @include breakpoints(md) {
       font-size: 3rem;
@@ -40,9 +52,14 @@ export default defineComponent({
   }
 
   h2 {
-    color: $color-gray-500;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
+    color: $color-gray-500;
+
+    @include breakpoints(md) {
+      font-size: 1.5rem;
+    }
   }
 }
 </style>

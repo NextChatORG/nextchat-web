@@ -26,6 +26,11 @@ body,
   text-rendering: optimizeLegibility;
   color: $color-gray-800;
 
+  ::selection {
+    color: $color-gray-50;
+    background-color: rgba($color: $color-indigo-500, $alpha: 0.8);
+  }
+
   code {
     font-family: 'JetBrains Mono', monospace;
   }

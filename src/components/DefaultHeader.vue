@@ -4,25 +4,43 @@
     <div class="header__navigation">
       <ul>
         <li>
-          <router-link to="/">Home</router-link>
+          <router-link to="/" :title="t('header.home.title')">{{
+            t('header.home.text')
+          }}</router-link>
         </li>
         <li>
-          <router-link to="/">Download</router-link>
+          <router-link to="/#download" :title="t('header.download.title')">{{
+            t('header.download.text')
+          }}</router-link>
         </li>
         <li>
-          <router-link to="/">Services</router-link>
+          <router-link to="/" :title="t('header.services.title')">{{
+            t('header.services.text')
+          }}</router-link>
         </li>
         <li>
-          <img src="/icons/48x48.png" alt="NextChat Icon" />
+          <router-link to="/#about">
+            <img src="/icons/48x48.png" alt="NextChat Icon" />
+          </router-link>
         </li>
         <li>
-          <router-link to="/">Stats</router-link>
+          <router-link to="/" :title="t('header.stats.title')">{{
+            t('header.stats.text')
+          }}</router-link>
         </li>
         <li>
-          <router-link to="/">Contributors</router-link>
+          <router-link to="/"
+            ><router-link to="/" :title="t('header.contributors.title')">{{
+              t('header.contributors.text')
+            }}</router-link></router-link
+          >
         </li>
         <li>
-          <router-link to="/">Blog</router-link>
+          <router-link to="/"
+            ><router-link to="/" :title="t('header.blog.title')">{{
+              t('header.blog.text')
+            }}</router-link></router-link
+          >
         </li>
       </ul>
     </div>
@@ -45,10 +63,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'DefaultHeader',
-  setup() {},
+  setup() {
+    const { t } = useI18n()
+
+    return {
+      t,
+    }
+  },
 })
 </script>
 
