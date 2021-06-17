@@ -12,7 +12,8 @@
     "postinstall": "husky install"
   },
   "engines": {
-    "node": "12 - 16"
+    "yarn": "^2",
+    "node": "^12 || ^14 || ^16"
   },
   "homepage": "https://www.nextchat.org",
   "repository": {
