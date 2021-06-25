@@ -4,6 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'App',
@@ -12,7 +13,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import '~@/scss/fonts', '~@/scss/normalize', '~@/scss/colors';
+@import '~@/scss/fonts', '~@/scss/normalize', '~@/scss/variables';
 
 html,
 body,
@@ -25,33 +26,52 @@ body,
 html,
 body,
 #app,
-div,
 section,
 header,
-footer {
+footer,
+strong,
+aside,
+main,
+span,
+nav,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+ul,
+ol,
+li,
+p,
+a {
   scrollbar-width: auto;
-  scrollbar-color: $color-indigo-300 $color-indigo-50;
+  scrollbar-color: $color-blue-gray-200 $color-blue-gray-50;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-gray-200;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-blue-gray-50;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
 }
 
 #app {
-  font-family: 'Inter', sans-serif;
+  font-family: $font-sans;
   text-rendering: optimizeLegibility;
   color: $color-gray-800;
-  overflow: hidden auto;
 
   ::selection {
     color: $color-gray-50;
-    background-color: rgba($color: $color-indigo-500, $alpha: 0.8);
-  }
-
-  code {
-    font-family: 'JetBrains Mono', monospace;
-  }
-}
-
-@supports (font-variation-settings: normal) {
-  #app {
-    font-family: 'Inter var', sans-serif;
+    background-color: $color-indigo-A200;
   }
 }
 </style>

@@ -24,5 +24,11 @@
       "text": "Blog",
       "title": "Ir a la página del blog para ver los artículos publicados por el equipo de NextChat"
     }
+  },
+  "pages": {
+    "home": {
+      "aboutTitle": "NextChat",
+      "aboutDescription": "Conecte con personas de todo el mundo en tiempo real de forma privada y segura."
+    }
   }
 }

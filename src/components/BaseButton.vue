@@ -50,7 +50,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '~@/scss/base';
+@import '~@/scss/variables', '~@/scss/mixins';
 
 button {
   cursor: pointer;

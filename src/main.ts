@@ -15,10 +15,22 @@ library.add(fas, fab, far)
 
 const head = createHead()
 
+let i18nLocale = 'en'
+
+for (const locale in messages) {
+  if (localStorage.getItem('locale') == locale) {
+    i18nLocale = localStorage.getItem('locale') || i18nLocale
+  } else if (navigator.language == locale) {
+    i18nLocale = navigator.language
+  } else if (navigator.language.split('-')[0] == locale) {
+    i18nLocale = navigator.language.split('-')[0]
+  }
+}
+
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: localStorage.getItem('locale') || navigator.language,
+  locale: i18nLocale,
   fallbackLocale: 'en',
   messages,
 })

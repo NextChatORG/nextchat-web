@@ -71,7 +71,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '~@/scss/base';
+@import '~@/scss/mixins', '~@/scss/variables';
 
 .header {
   @include flex($content: space-between);

@@ -1,10 +1,9 @@
 <template>
   <layout-default h-title="Home">
     <div id="about">
-      <h1>NextChat</h1>
+      <h1>{{ $t('pages.home.aboutTitle') }}</h1>
       <h2>
-        Connect with people around the world in real time in a private and
-        secure way
+        {{ $t('pages.home.aboutDescription') }}
       </h2>
     </div>
     <div id="download">
@@ -42,7 +41,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '~@/scss/colors', '~@/scss/breakpoints';
+@import '~@/scss/variables', '~@/scss/mixins';
 
 #about {
   padding: 1rem 2%;
