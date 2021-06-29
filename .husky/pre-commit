@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn run format || npm run format
+yarn run lint:fix || npm run lint:fix
+git add .
