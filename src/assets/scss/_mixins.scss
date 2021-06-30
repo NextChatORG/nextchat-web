@@ -1,0 +1,79 @@
+@mixin breakpoint($screen) {
+  @if $screen == 'sm' {
+    @media (min-width: 640px) {
+      @content;
+    }
+  } @else if $screen == 'md' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $screen == 'lg' {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $screen == 'xl' {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $screen == '2xl' {
+    @media (min-width: 1536px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint prefix not found";
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  li,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+@mixin flex($items: center, $content: center, $text: left) {
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+  text-align: $text;
+}
+
+@mixin breakpoints-value(
+  $element,
+  $default,
+  $sm: '',
+  $md: '',
+  $lg: '',
+  $xl: ''
+) {
+  #{element}: $default;
+
+  @if $sm != '' {
+    @include breakpoint(sm) {
+      #{$element}: $sm;
+    }
+  }
+
+  @if $md != '' {
+    @include breakpoint(md) {
+      #{$element}: $md;
+    }
+  }
+
+  @if $lg != '' {
+    @include breakpoint(lg) {
+      #{$element}: $lg;
+    }
+  }
+
+  @if $xl != '' {
+    @include breakpoint(sm) {
+      #{$element}: $sm;
+    }
+  }
+}
