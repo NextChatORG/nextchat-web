@@ -15,13 +15,13 @@
     { "src": "/icons/152x152.png", "sizes": "152x152", "type": "image/png" },
     { "src": "/icons/256x256.png", "sizes": "256x256", "type": "image/png" },
     { "src": "/icons/384x384.png", "sizes": "384x384", "type": "image/png" },
-    { "src": "/icons/512x512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/icons/512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/any.svg", "sizes": "any", "type": "image/svg+xml" }
   ],
   "related_applications": [
     {
       "id": "org.nextchat.nextchat",
       "platform": "play"
     }
-  ],
-  "prefer_related_applications": true
+  ]
 }
