@@ -1,46 +1,15 @@
 {
-  "name": "nextchat-web",
-  "version": "1.0.0-alpha",
-  "license": "GPL-2.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview",
-    "format": "prettier {**/**,**}/*.{vue,ts,js,json,html} --write --ignore-path .gitignore",
-    "format:check": "prettier {**/**,**}/*.{vue,ts,js,json,html} --check --ignore-path .gitignore",
-    "lint": "eslint . --ext vue,ts,js --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext vue,ts,js --ignore-path .gitignore --fix",
-    "postinstall": "husky install"
-  },
-  "engines": {
-    "node": "12.x || 14.x || 16.x"
-  },
-  "dependencies": {
-    "vue": "^3.0.5"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "@vitejs/plugin-vue": "^1.2.3",
-    "@vue/compiler-sfc": "^3.0.5",
-    "@vueuse/head": "^0.6.0",
-    "autoprefixer": "^10.2.6",
-    "cssnano": "^5.0.6",
-    "cssnano-preset-advanced": "^5.1.3",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.12.1",
-    "husky": "^6.0.0",
-    "postcss": "^8.3.5",
-    "prettier": "^2.3.2",
-    "sass": "^1.35.1",
-    "typescript": "^4.3.2",
-    "vite": "^2.3.7",
-    "vite-ssr": "^0.10.5",
-    "vue-eslint-parser": "^7.6.0",
-    "vue-router": "^4.0.10",
-    "vue-tsc": "^0.0.24"
-  }
+    "name": "nextchat-web",
+    "version": "1.0.0-alpha",
+    "description": "Web client for the NextChat messaging application",
+    "license": "GPL-3.0",
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+        "node": "12.x || 14.x || 16.x"
+    },
+    "private": true,
+    "workspaces": [
+        "./packages/*"
+    ]
 }
