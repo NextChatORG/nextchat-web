@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree",
+    "EditorConfig.EditorConfig"
+  ]
+}
