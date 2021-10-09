@@ -20,7 +20,7 @@
     "prefix": "license",
     "body": [
       "<!--",
-      "\tNextChat - messaging application",
+      "\tNextChat - Messages social network",
       "\tCopyright (C) 2021  NextChat Org & NextChat Contributors",
       "\t",
       "\tThis program is free software: you can redistribute it and/or modify",
@@ -43,7 +43,7 @@
     "prefix": "license",
     "body": [
       "/*",
-      "\tNextChat - messaging application",
+      "\tNextChat - Messages social network",
       "\tCopyright (C) 2021  NextChat Org & NextChat Contributors",
       "\t",
       "\tThis program is free software: you can redistribute it and/or modify",
@@ -65,7 +65,7 @@
     "scope": "javascript,javascriptreact,typescript,typescriptreact,rust",
     "prefix": "license",
     "body": [
-      "//\tNextChat - messaging application",
+      "//\tNextChat - Messages social network",
       "//\tCopyright (C) 2021  NextChat Org & NextChat Contributors",
       "//\t",
       "//\tThis program is free software: you can redistribute it and/or modify",
@@ -80,6 +80,38 @@
       "//\t",
       "//\tYou should have received a copy of the GNU General Public License",
       "//\talong with this program.  If not, see <https://www.gnu.org/licenses/>."
+    ]
+  },
+  "init vue basic component": {
+    "scope": "vue",
+    "prefix": "init",
+    "body": [
+      "<!--",
+      "\tNextChat - Messages social network",
+      "\tCopyright (C) 2021  NextChat Org & NextChat Contributors",
+      "\t",
+      "\tThis program is free software: you can redistribute it and/or modify",
+      "\tit under the terms of the GNU General Public License as published by",
+      "\tthe Free Software Foundation, either version 3 of the License, or",
+      "\t(at your option) any later version.",
+      "\t",
+      "\tThis program is distributed in the hope that it will be useful,",
+      "\tbut WITHOUT ANY WARRANTY; without even the implied warranty of",
+      "\tMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the",
+      "\tGNU General Public License for more details.",
+      "\t",
+      "\tYou should have received a copy of the GNU General Public License",
+      "\talong with this program.  If not, see <https://www.gnu.org/licenses/>.",
+      "-->",
+      "<template>",
+      "\t",
+      "</template>",
+      "<script lang=\"ts\" setup>",
+      "\t",
+      "</script>",
+      "<style lang=\"scss\">",
+      "\t",
+      "</style>"
     ]
   }
 }
