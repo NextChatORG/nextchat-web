@@ -1,3 +1,20 @@
+<!--
+  NextChat - Messages social network
+  Copyright (C) 2021  NextChat Org & NextChat Contributors
+  
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
 <svg width="181" height="181" viewBox="0 0 181 181" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M176.608 80.4292C177.968 81.7887 179.047 83.4031 179.784 85.1798C180.52 86.9564 180.898 88.861 180.898 90.7842C180.898 92.7074 180.52 94.6114 179.784 96.3881C179.047 98.1648 177.968 99.7792 176.608 101.139L101.258 176.497C98.5121 179.242 94.7884 180.784 90.906 180.784C87.0237 180.784 83.3 179.242 80.5541 176.497L5.20423 101.139C2.46066 98.393 0.919525 94.6702 0.919525 90.7884C0.919525 86.907 2.46066 83.1838 5.20423 80.4385L80.5541 5.07958C81.913 3.71982 83.5267 2.64111 85.3027 1.90519C87.0787 1.16923 88.9821 0.790421 90.9046 0.790421C92.8271 0.790421 94.7305 1.16923 96.5065 1.90519C98.2825 2.64111 99.8962 3.71982 101.255 5.07958L176.605 80.4385" fill="#653BB7"/>
 <path d="M68.0161 163.943L80.5751 176.504C83.321 179.248 87.0447 180.79 90.927 180.79C94.8094 180.79 98.5331 179.248 101.279 176.504L176.629 101.145C177.989 99.7853 179.068 98.171 179.805 96.3943C180.541 94.6176 180.92 92.7131 180.92 90.7899C180.92 88.8667 180.541 86.9626 179.805 85.1859C179.068 83.4092 177.989 81.7949 176.629 80.4353L101.279 5.07666C144.453 81.0573 89.2662 143.81 68.0039 163.925" fill="#424EB4"/>
