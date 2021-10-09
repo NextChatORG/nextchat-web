@@ -15,11 +15,11 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import viteSSR from "vite-ssr/plugin";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import viteSSR from 'vite-ssr/plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [viteSSR(), vue()],
-});
+})

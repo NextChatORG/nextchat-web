@@ -15,8 +15,8 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-import App from "./App.vue";
-import routes from "./routes";
-import viteSSR from "vite-ssr";
+import App from './App.vue'
+import routes from './routes'
+import viteSSR from 'vite-ssr'
 
-export default viteSSR(App, { routes });
+export default viteSSR(App, { routes })
