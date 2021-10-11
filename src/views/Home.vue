@@ -16,7 +16,10 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <template>
+  <Header />
   <h1>Hello, world!</h1>
 </template>
-<script lang="ts" setup></script>
+<script setup lang="ts">
+import Header from '@/components/Header.vue'
+</script>
 <style lang="scss"></style>

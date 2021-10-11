@@ -18,5 +18,9 @@
 import App from './App.vue'
 import routes from './routes'
 import viteSSR from 'vite-ssr'
+import { createHead, Head } from '@vueuse/head'
 
-export default viteSSR(App, { routes })
+export default viteSSR(App, { routes }, ({ app }) => {
+  app.use(createHead())
+  app.component(Head.name, Head)
+})
