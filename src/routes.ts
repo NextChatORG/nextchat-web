@@ -15,14 +15,14 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-import { RouteRecordRaw } from "vue-router";
+import { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
-    name: "Home",
-    path: "/",
-    component: () => import("./views/Home.vue"),
+    name: 'Home',
+    path: '/',
+    component: () => import('./views/Home.vue'),
   },
-];
+]
 
-export default routes;
+export default routes

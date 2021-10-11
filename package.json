@@ -2,26 +2,38 @@
   "name": "nextchat-web",
   "version": "1.0.0-alpha",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite-ssr",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint --ignore-path .gitignore --ext vue,ts,js .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore --ext vue,ts,js .",
+    "format": "prettier --ignore-path .gitignore --write {*,**/*}.{js,ts,md,html,json} **/*.vue",
+    "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,html,json} **/*.vue"
   },
   "dependencies": {
-    "vue": "^3.2.16",
-    "vue-router": "^4.0.11"
+    "vue": "^3.2.16"
   },
   "devDependencies": {
     "@types/connect": "^3.4.35",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
     "@vitejs/plugin-vue": "^1.9.2",
     "@vueuse/head": "^0.6.0",
     "autoprefixer": "^10.3.7",
     "cssnano": "^5.0.8",
     "cssnano-preset-advanced": "^5.1.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.19.1",
     "postcss": "^8.3.9",
+    "prettier": "^2.4.1",
     "sass": "^1.42.1",
     "typescript": "^4.4.3",
     "vite": "^2.6.0",
     "vite-ssr": "^0.13.2",
+    "vue-eslint-parser": "^7.11.0",
+    "vue-router": "^4.0.11",
     "vue-tsc": "^0.3.0"
   }
 }
