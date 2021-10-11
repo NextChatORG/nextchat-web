@@ -20,9 +20,14 @@
 </template>
 <script lang="ts" setup></script>
 <style lang="scss">
-@import './assets/styles/normalize.css';
+@import '@/assets/styles/normalize', '@/assets/styles/fonts';
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
+  @supports (font-variation-settings: normal) {
+    & {
+      font-family: 'Inter var', sans-serif;
+    }
+  }
 }
 </style>
