@@ -26,10 +26,13 @@
       <nav>
         <ul>
           <li>
-            <router-link to="/features">Features</router-link>
+            <router-link to="/#features">Features</router-link>
           </li>
           <li>
-            <router-link to="/pricing">Pricing</router-link>
+            <router-link to="/#download">Download</router-link>
+          </li>
+          <li>
+            <router-link to="/#pricing">Pricing</router-link>
           </li>
           <li>
             <router-link to="/blog">Blog</router-link>
@@ -60,6 +63,8 @@
   z-index: 90;
   user-select: none;
   padding: 0.4rem 0.8rem;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  backdrop-filter: blur(10px) saturate(180%);
 
   @include breakpoint(md) {
     padding: 0.6rem 1rem;

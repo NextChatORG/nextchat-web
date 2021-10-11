@@ -20,7 +20,8 @@
 </template>
 <script lang="ts" setup></script>
 <style lang="scss">
-@import '@/assets/styles/normalize', '@/assets/styles/fonts';
+@import '@/assets/styles/normalize', '@/assets/styles/fonts',
+  '@/assets/styles/variables';
 
 #app {
   font-family: 'Inter', sans-serif;
@@ -29,5 +30,14 @@
       font-family: 'Inter var', sans-serif;
     }
   }
+
+  background-color: #f9f9f9;
+  height: 100%;
+  min-height: 100vh;
+}
+
+::selection {
+  color: #f9f9f9;
+  background-color: rgba($color: $color-primary, $alpha: 0.8);
 }
 </style>

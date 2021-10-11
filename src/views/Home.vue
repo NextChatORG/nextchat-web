@@ -16,10 +16,39 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <template>
-  <Header />
-  <h1>Hello, world!</h1>
+  <layout-default name="home" h-title="Home">
+    <div id="intro">
+      <h1>NextChat</h1>
+      <h2>Messages social network</h2>
+    </div>
+    <div id="features"></div>
+    <div id="download"></div>
+    <div id="pricing"></div>
+  </layout-default>
 </template>
-<script setup lang="ts">
-import Header from '@/components/Header.vue'
-</script>
-<style lang="scss"></style>
+<script setup lang="ts"></script>
+<style lang="scss">
+#intro {
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 0.6rem;
+    color: #333;
+    font-weight: 800;
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    margin: 0;
+    color: #555;
+    font-weight: 350;
+    font-size: 1.4rem;
+  }
+}
+</style>
