@@ -19,7 +19,5 @@
     "sourceType": "module"
   },
   "plugins": ["vue", "@typescript-eslint", "prettier"],
-  "rules": {
-    "prettier/prettier": ["error"]
-  }
+  "rules": {}
 }
