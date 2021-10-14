@@ -37,7 +37,7 @@
           <input v-model="password" type="password" />
         </div>
         <div class="box-input">
-          <label for="username"> Repeat Password </label>
+          <label for="password-again"> Repeat Password </label>
           <input v-model="password_again" type="password" />
         </div>
  
