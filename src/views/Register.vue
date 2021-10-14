@@ -26,14 +26,21 @@
           <label for="username" class="label-style"> Username </label>
           <input v-model="username" type="text" placeholder="TeoDev1611" />
         </div>
+
         <div class="box-input">
-          <label for="username"> Password </label>
+          <label for="beta-key"> Beta Key </label>
+          <input v-model="beta-key" type="text" />
+        </div>
+
+        <div class="box-input">
+          <label for="password"> Password </label>
           <input v-model="password" type="password" />
         </div>
         <div class="box-input">
           <label for="username"> Repeat Password </label>
           <input v-model="password_again" type="password" />
         </div>
+ 
         <div class="btn-box">
           <button type="submit" class="session-buttons__register register-btn">
             Register me!
@@ -50,6 +57,7 @@
 <script lang="ts" setup>
 let username = ''
 let password = ''
+let beta-key = ''
 let password_again = ''
 </script>
 
