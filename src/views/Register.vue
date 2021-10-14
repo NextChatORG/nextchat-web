@@ -20,10 +20,10 @@
   <layout-default name="Register" h-title="Register">
     <div class="main-box-form">
       <h1>Hi, Welcome to NextChat!</h1>
-      <h3>Message Social Network, feel at Home.</h3>
+      <span>Message Social Network, feel at Home.</span>
       <form>
         <div class="box-input">
-          <label for="username"> Username </label>
+          <label for="username" class="label-styler"> Username </label>
           <input v-model="username" type="text" placeholder="TeoDev1611" />
         </div>
         <div class="box-input">
@@ -34,12 +34,14 @@
           <label for="username"> Repeat Password </label>
           <input v-model="password_again" type="password" />
         </div>
-        <button type="submit" class="session-buttons__register">
-          Register me!
-        </button>
-        <router-link to="/login" class="session-buttons__login">
-          I have a account
-        </router-link>
+        <div class="btn-box">
+          <button type="submit" class="session-buttons__register">
+            Register me!
+          </button>
+          <router-link to="/login" class="session-buttons__login">
+            I have a account
+          </router-link>
+        </div>
       </form>
     </div>
   </layout-default>
@@ -63,8 +65,26 @@ let password_again = ''
   justify-content: center;
 }
 
-.box-input {
-  margin-bottom: 3rem auto;
+.main-box-form span {
+  font-size: 18px;
+  padding: 0.5rem 1rem 1rem;
+}
+
+.box-input input {
+  padding: 1rem 1rem 1rem;
+  display: block;
+  border: solid 2px $color-secondary;
+  border-radius: 0.37rem;
+  width: 30rem;
+}
+
+.box-input label {
+  padding: 1rem 1rem 1rem 1rem;
+  font-weight: bold 420;
+}
+
+.btn-box {
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .session-buttons__login {
