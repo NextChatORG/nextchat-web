@@ -78,7 +78,7 @@ let password_again = ''
   width: 30rem;
 }
 
-.box-input{
+.box-input {
   margin-bottom: 0.15rem;
   padding: 0.5rem 0.5rem;
 }
@@ -117,5 +117,4 @@ let password_again = ''
 .register-btn {
   width: 14rem;
 }
-
 </style>

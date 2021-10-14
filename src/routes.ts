@@ -27,7 +27,7 @@ const routes: RouteRecordRaw[] = [
     name: 'Register',
     path: '/register',
     component: () => import('./views/Register.vue'),
-  }
+  },
 ]
 
 export default routes
