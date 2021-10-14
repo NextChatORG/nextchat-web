@@ -28,8 +28,12 @@
         </div>
 
         <div class="box-input">
-          <label for="beta-key"> Beta Key </label>
-          <input v-model="beta-key" type="text" />
+          <label for="betakey"> Beta Key </label>
+          <input
+            v-model="beta_key"
+            type="text"
+            placeholder="0ac4155g-d7aab-4557-82f6-dfa589af439d"
+          />
         </div>
 
         <div class="box-input">
@@ -40,7 +44,7 @@
           <label for="password-again"> Repeat Password </label>
           <input v-model="password_again" type="password" />
         </div>
- 
+
         <div class="btn-box">
           <button type="submit" class="session-buttons__register register-btn">
             Register me!
@@ -57,7 +61,7 @@
 <script lang="ts" setup>
 let username = ''
 let password = ''
-let beta-key = ''
+let beta_key = ''
 let password_again = ''
 </script>
 
@@ -75,7 +79,11 @@ let password_again = ''
 
 .main-box-form span {
   font-size: 18px;
-  padding: 0.5rem 1rem 1rem;
+  padding: 0.15rem 0.25rem 0.25rem;
+}
+
+.main-box-form h1 {
+  padding: 0.15rem 0.15rem 0.15rem;
 }
 
 .box-input input {
@@ -87,8 +95,8 @@ let password_again = ''
 }
 
 .box-input {
-  margin-bottom: 0.15rem;
-  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.1rem;
+  padding: 0.25rem 0.25rem;
 }
 
 .btn-box {
