@@ -33,7 +33,7 @@
     "vite": "^2.6.0",
     "vite-ssr": "^0.14.1",
     "vue-eslint-parser": "^7.11.0",
-    "vue-router": "^4.0.11",
+    "vue-router": "^4.0.12",
     "vue-tsc": "^0.28.2"
   }
 }
