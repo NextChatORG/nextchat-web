@@ -23,7 +23,7 @@
       <span>Message Social Network, feel at Home.</span>
       <form>
         <div class="box-input">
-          <label for="username" class="label-styler"> Username </label>
+          <label for="username" class="label-style"> Username </label>
           <input v-model="username" type="text" placeholder="TeoDev1611" />
         </div>
         <div class="box-input">
@@ -35,10 +35,10 @@
           <input v-model="password_again" type="password" />
         </div>
         <div class="btn-box">
-          <button type="submit" class="session-buttons__register">
+          <button type="submit" class="session-buttons__register register-btn">
             Register me!
           </button>
-          <router-link to="/login" class="session-buttons__login">
+          <router-link to="/login" class="session-buttons__login login-btn">
             I have a account
           </router-link>
         </div>
@@ -78,9 +78,9 @@ let password_again = ''
   width: 30rem;
 }
 
-.box-input label {
-  padding: 1rem 1rem 1rem 1rem;
-  font-weight: bold 420;
+.box-input{
+  margin-bottom: 0.15rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .btn-box {
@@ -108,4 +108,14 @@ let password_again = ''
   background: $color-primary;
   color: #f9f9f9;
 }
+
+.login-btn {
+  width: 14rem;
+  margin-left: 2rem;
+}
+
+.register-btn {
+  width: 14rem;
+}
+
 </style>
