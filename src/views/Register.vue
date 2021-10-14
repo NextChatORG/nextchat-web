@@ -18,7 +18,9 @@
 
 <template>
   <layout-default name="Register" h-title="Register">
-    <div class="main-form-box">
+    <div class="main-box-form">
+      <h1>Hi, Welcome to NextChat!</h1>
+      <h3>Message Social Network, feel at Home.</h3>
       <form>
         <div class="box-input">
           <label for="username"> Username </label>
@@ -32,8 +34,12 @@
           <label for="username"> Repeat Password </label>
           <input v-model="password_again" type="password" />
         </div>
-        <button type="submit" class="session-buttons__register">Register me!</button>
-      <router-link to="/login" class="session-buttons__login"> I have a account </router-link>
+        <button type="submit" class="session-buttons__register">
+          Register me!
+        </button>
+        <router-link to="/login" class="session-buttons__login">
+          I have a account
+        </router-link>
       </form>
     </div>
   </layout-default>
@@ -48,25 +54,38 @@ let password_again = ''
 <style lang="scss">
 @import '@/assets/styles/breakpoint', '@/assets/styles/variables';
 
-  .session-buttons__login {
-    background: transparent;
-    border: 2px solid $color-primary;
-    border-radius: 0.37rem;
-    padding: 0.4rem 0.8rem;
-    margin-left: 1rem;
-    color: $color-primary;
-    text-decoration: none;
-    font-weight: 500;
+.main-box-form {
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    &:hover {
-      opacity: 80%;
-      transition: opacity 0.3s ease-in-out;
-    }
-  }
+.box-input {
+  margin-bottom: 3rem auto;
+}
 
-  .session-buttons__register {
-    @extend .session-buttons__login;
-    background: $color-primary;
-    color: #f9f9f9;
+.session-buttons__login {
+  background: transparent;
+  border: 2px solid $color-primary;
+  border-radius: 0.37rem;
+  padding: 0.4rem 0.8rem;
+  margin-left: 1rem;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 80%;
+    transition: opacity 0.3s ease-in-out;
   }
+}
+
+.session-buttons__register {
+  @extend .session-buttons__login;
+  background: $color-primary;
+  color: #f9f9f9;
+}
 </style>
