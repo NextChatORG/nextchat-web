@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 <!--
   NextChat - Messages social network
   Copyright (C) 2021  NextChat Org & NextChat Contributors
@@ -59,10 +60,25 @@
 </template>
 
 <script lang="ts" setup>
-let username = ''
-let password = ''
-let beta_key = ''
-let password_again = ''
+import { ref } from 'vue'
+import gql from 'graphql-tag'
+
+let username = ref('')
+let password = ref('')
+let beta_key = ref('')
+let password_again = ref('')
+
+export default {
+  setup() {
+    const registerAppQuery = gql`
+        mutation signUp(username: ${username.value}, betaKey: ${beta_key.value}, password: ${password.value}, repeatPassword: ${password_again.value}) {
+          username
+          recoveryCodes
+          id
+        }
+      `
+  },
+}
 </script>
 
 <style lang="scss">
