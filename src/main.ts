@@ -18,11 +18,13 @@
 import App from './App.vue'
 import routes from './routes'
 import viteSSR from 'vite-ssr'
+import apolloProvider from './connection/graphql_connect'
 import { createHead, Head } from '@vueuse/head'
 import LayoutDefault from '@/layouts/LayoutDefault.vue'
 
 export default viteSSR(App, { routes }, ({ app }) => {
   app.use(createHead())
+  app.use(apolloProvider)
   app.component(Head.name, Head)
   app.component('LayoutDefault', LayoutDefault)
 })

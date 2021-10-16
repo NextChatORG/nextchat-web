@@ -11,6 +11,10 @@
     "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,html,json} **/*.vue"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@vue/apollo-option": "^4.0.0-alpha.15",
+    "graphql": "^15.6.1",
+    "graphql-tag": "^2.12.5",
     "vue": "^3.2.16"
   },
   "devDependencies": {
