@@ -16,7 +16,7 @@
   // 	"description": "Log output to console"
   // }
   "license notice with '<' & '>'": {
-    "scope": "vue,html,svg,xml",
+    "scope": "vue,html,svg,xml,markdown",
     "prefix": "license",
     "body": [
       "<!--",

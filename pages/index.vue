@@ -16,28 +16,38 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <template>
-  <router-view></router-view>
+  <Header />
+  <div id="intro">
+    <h1>NextChat</h1>
+    <h2>Messages social network</h2>
+  </div>
+  <div id="features"></div>
+  <div id="download"></div>
+  <div id="pricing"></div>
 </template>
-<script lang="ts" setup></script>
-<style lang="scss">
-@import '@/assets/styles/normalize', '@/assets/styles/fonts',
-  '@/assets/styles/variables';
 
-#app {
-  font-family: 'Inter', sans-serif;
-  @supports (font-variation-settings: normal) {
-    & {
-      font-family: 'Inter var', sans-serif;
-    }
+<style scoped lang="scss">
+#intro {
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 0.6rem;
+    color: #333;
+    font-weight: 800;
+    font-size: 2.8rem;
   }
 
-  background-color: #f9f9f9;
-  height: 100%;
-  min-height: 100vh;
-}
-
-::selection {
-  color: #f9f9f9;
-  background-color: rgba($color: $color-primary, $alpha: 0.8);
+  h2 {
+    margin: 0;
+    color: #555;
+    font-weight: 350;
+    font-size: 1.4rem;
+  }
 }
 </style>

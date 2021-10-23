@@ -51,8 +51,8 @@
   </header>
 </template>
 
-<style lang="scss">
-@import '@/assets/styles/breakpoint', '@/assets/styles/variables';
+<style scoped lang="scss">
+@import '~/assets/styles/breakpoint', '~/assets/styles/variables';
 
 .header {
   display: flex;
