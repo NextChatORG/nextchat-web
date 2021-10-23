@@ -1,4 +1,4 @@
-/*
+<!--
   NextChat - Messages social network
   Copyright (C) 2021  NextChat Org & NextChat Contributors
   
@@ -14,12 +14,30 @@
   
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-/// <reference types="vite/client" />
+-->
+<template>
+  <router-view></router-view>
+</template>
 
-declare module '*.vue' {
-  import { DefineComponent } from 'vue'
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types
-  const component: DefineComponent<{}, {}, any>
-  export default component
+<style lang="scss">
+@import '~/assets/styles/fonts', '~/assets/styles/normalize',
+  '~/assets/styles/variables';
+
+body > #__nuxt {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  height: 100%;
+  min-height: 100vh;
+
+  @supports (font-variation-settings: normal) {
+    & {
+      font-family: 'Inter var', sans-serif;
+    }
+  }
 }
+
+::selection {
+  color: #f9f9f9;
+  background-color: rgba($color: $color-primary, $alpha: 0.85);
+}
+</style>
