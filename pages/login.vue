@@ -17,7 +17,7 @@
 -->
 
 <template>
-  <Header/>
+  <Header />
   <h1>Hello from login :p</h1>
 </template>
 

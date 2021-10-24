@@ -17,7 +17,7 @@
 -->
 
 <template>
-  <Header/>
+  <Header />
   <h1>Hello from blog :p</h1>
 </template>
 
