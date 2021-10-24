@@ -41,9 +41,7 @@
       </nav>
     </div>
     <div class="header__session-buttons">
-      <NuxtLink to="/login" class="session-buttons__login"
-        >Login</NuxtLink
-      >
+      <NuxtLink to="/login" class="session-buttons__login">Login</NuxtLink>
       <NuxtLink to="/register" class="session-buttons__register"
         >Register</NuxtLink
       >

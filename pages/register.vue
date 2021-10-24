@@ -21,7 +21,7 @@
   <Header />
   <div class="main-box-form">
     <h1>Hi, Welcome to NextChat!</h1>
-    <span>Message Social Network, feel at Home.</span>
+    <span>Message Social Network, feel at Home :p</span>
     <form>
       <div class="box-input">
         <label for="username" class="label-style"> Username </label>

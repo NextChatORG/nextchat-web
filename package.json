@@ -11,7 +11,10 @@
     "format": "prettier --ignore-path .gitignore --write {*,**/*}.{js,ts,md,json} **/*.vue",
     "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,json} **/*.vue"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "graphql-tag": "^2.12.5"
+  },
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "cssnano": "^5.0.8",
