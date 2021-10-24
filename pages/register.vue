@@ -50,9 +50,9 @@
           <button type="submit" class="session-buttons__register register-btn">
             Register me!
           </button>
-          <router-link to="/login" class="session-buttons__login login-btn">
+          <NuxtLink to="/login" class="session-buttons__login login-btn">
             I have a account
-          </router-link>
+          </NuxtLink>
         </div>
       </form>
     </div>
