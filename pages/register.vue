@@ -18,44 +18,44 @@
 -->
 
 <template>
-    <Header />
-    <div class="main-box-form">
-      <h1>Hi, Welcome to NextChat!</h1>
-      <span>Message Social Network, feel at Home.</span>
-      <form>
-        <div class="box-input">
-          <label for="username" class="label-style"> Username </label>
-          <input v-model="username" type="text" placeholder="TeoDev1611" />
-        </div>
+  <Header />
+  <div class="main-box-form">
+    <h1>Hi, Welcome to NextChat!</h1>
+    <span>Message Social Network, feel at Home.</span>
+    <form>
+      <div class="box-input">
+        <label for="username" class="label-style"> Username </label>
+        <input v-model="username" type="text" placeholder="TeoDev1611" />
+      </div>
 
-        <div class="box-input">
-          <label for="betakey"> Beta Key </label>
-          <input
-            v-model="beta_key"
-            type="text"
-            placeholder="0ac4155g-d7aab-4557-82f6-dfa589af439d"
-          />
-        </div>
+      <div class="box-input">
+        <label for="betakey"> Beta Key </label>
+        <input
+          v-model="beta_key"
+          type="text"
+          placeholder="0ac4155g-d7aab-4557-82f6-dfa589af439d"
+        />
+      </div>
 
-        <div class="box-input">
-          <label for="password"> Password </label>
-          <input v-model="password" type="password" />
-        </div>
-        <div class="box-input">
-          <label for="password-again"> Repeat Password </label>
-          <input v-model="password_again" type="password" />
-        </div>
+      <div class="box-input">
+        <label for="password"> Password </label>
+        <input v-model="password" type="password" />
+      </div>
+      <div class="box-input">
+        <label for="password-again"> Repeat Password </label>
+        <input v-model="password_again" type="password" />
+      </div>
 
-        <div class="btn-box">
-          <button type="submit" class="session-buttons__register register-btn">
-            Register me!
-          </button>
-          <NuxtLink to="/login" class="session-buttons__login login-btn">
-            I have a account
-          </NuxtLink>
-        </div>
-      </form>
-    </div>
+      <div class="btn-box">
+        <button type="submit" class="session-buttons__register register-btn">
+          Register me!
+        </button>
+        <NuxtLink to="/login" class="session-buttons__login login-btn">
+          I have a account
+        </NuxtLink>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -65,7 +65,6 @@ let password = ref('')
 let beta_key = ref('')
 let password_again = ref('')
 </script>
-
 
 <style lang="scss">
 @import '@/assets/styles/breakpoint', '@/assets/styles/variables';
