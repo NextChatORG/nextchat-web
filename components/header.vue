@@ -26,26 +26,26 @@
       <nav>
         <ul>
           <li>
-            <router-link to="/#features">Features</router-link>
+            <NuxtLink to="/#features">Features</NuxtLink>
           </li>
           <li>
-            <router-link to="/#download">Download</router-link>
+            <NuxtLink to="/#download">Download</NuxtLink>
           </li>
           <li>
-            <router-link to="/#pricing">Pricing</router-link>
+            <NuxtLink to="/#pricing">Pricing</NuxtLink>
           </li>
           <li>
-            <router-link to="/blog">Blog</router-link>
+            <NuxtLink to="/blog">Blog</NuxtLink>
           </li>
         </ul>
       </nav>
     </div>
     <div class="header__session-buttons">
-      <router-link to="/login" class="session-buttons__login"
-        >Login</router-link
+      <NuxtLink to="/login" class="session-buttons__login"
+        >Login</NuxtLink
       >
-      <router-link to="/register" class="session-buttons__register"
-        >Register</router-link
+      <NuxtLink to="/register" class="session-buttons__register"
+        >Register</NuxtLink
       >
     </div>
   </header>
