@@ -12,7 +12,6 @@
     "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,json} **/*.vue"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.1-rc.5",
     "graphql-tag": "^2.12.5"
   },
   "devDependencies": {
