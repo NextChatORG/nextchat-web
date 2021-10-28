@@ -16,7 +16,25 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <template>
-  <router-view></router-view>
+  <Head>
+    <Meta charset="UTF-8" />
+    <Meta name="theme-color" content="#424EB4" />
+    <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Link rel="shortcut icon" href="/favicon.ico" />
+    <Link rel="manifest" href="/manifest.webmanifest" />
+    <Link rel="apple-touch-icon" sizes="57x57" href="/icons/57x57.png" />
+    <Link rel="apple-touch-icon" sizes="60x60" href="/icons/60x60.png" />
+    <Link rel="apple-touch-icon" sizes="72x72" href="/icons/72x72.png" />
+    <Link rel="apple-touch-icon" sizes="76x76" href="/icons/76x76.png" />
+    <Link rel="apple-touch-icon" sizes="114x114" href="/icons/114x114.png" />
+    <Link rel="apple-touch-icon" sizes="120x120" href="/icons/120x120.png" />
+    <Link rel="apple-touch-icon" sizes="152x152" href="/icons/152x152.png" />
+    <Link rel="apple-touch-icon" sizes="180x180" href="/icons/180x180.png" />
+    <Title>NextChat</Title>
+  </Head>
+  <Body>
+    <router-view></router-view>
+  </Body>
 </template>
 
 <style lang="scss">

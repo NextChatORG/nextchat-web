@@ -1,10 +1,17 @@
 {
-  "name": "NextChat",
+  "name": "NextChat Web",
   "short_name": "NextChat",
   "start_url": "/chats",
   "display": "standalone",
+  "theme_color": "#424EB4",
+  "background_color": "#111827",
   "orientation": "portrait-primary",
   "description": "Messages social network",
+  "url_handlers": [
+    { "origin": "https://nextchat.org" },
+    { "origin": "https://www.nextchat.org" },
+    { "origin": "https://dev.nextchat.org" }
+  ],
   "icons": [
     { "src": "/icons/16x16.png", "sizes": "16x16", "type": "image/png" },
     { "src": "/icons/32x32.png", "sizes": "32x32", "type": "image/png" },
