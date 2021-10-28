@@ -20,11 +20,12 @@
 </template>
 
 <style lang="scss">
-@import '~/assets/styles/fonts', '~/assets/styles/normalize',
+@import '~/assets/styles/normalize', '~/assets/styles/fonts',
   '~/assets/styles/variables';
 
 body > #__nuxt {
   font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
   background-color: #f9f9f9;
   height: 100%;
   min-height: 100vh;

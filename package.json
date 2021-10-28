@@ -8,8 +8,8 @@
     "start": "node .output/server/index.mjs",
     "lint": "eslint --ignore-path .gitignore --ext vue,ts,js .",
     "lint:fix": "eslint --fix --ignore-path .gitignore --ext vue,ts,js .",
-    "format": "prettier --ignore-path .gitignore --write {*,**/*}.{js,ts,md,json} **/*.vue",
-    "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,json} **/*.vue"
+    "format": "prettier --ignore-path .gitignore --write {*,**/*}.{js,ts,md,json} **/*.{vue,scss}",
+    "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{js,ts,md,json} **/*.{vue,scss}"
   },
   "dependencies": {},
   "devDependencies": {
