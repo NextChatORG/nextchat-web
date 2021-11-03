@@ -4,13 +4,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format": "prettier --ignore-path .gitignore --write {*,**/*}.{ts,md,json} **/*.vue",
+    "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{ts,md,json} **/*.vue"
   },
   "dependencies": {
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "prettier": "^2.4.1",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vue-tsc": "^0.3.0"
