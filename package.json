@@ -7,8 +7,8 @@
     "serve": "vite preview",
     "lint": "eslint --ignore-path .gitignore --ext vue,ts,js .",
     "lint:fix": "eslint --fix --ignore-path .gitignore --ext vue,ts,js .",
-    "format": "prettier --ignore-path .gitignore --write {*,**/*}.{ts,md,json} **/*.vue",
-    "format:check": "prettier --ignore-path .gitignore --check {*,**/*}.{ts,md,json} **/*.vue"
+    "format": "prettier --ignore-path .gitignore --write {*,**/*,**/**/*}.{ts,md,json} {**/*,**/**/*}.vue",
+    "format:check": "prettier --ignore-path .gitignore --check {*,**/*,**/**/*}.{ts,md,json} {**/*,**/**/*}.vue"
   },
   "dependencies": {
     "vue": "^3.2.16"
@@ -25,6 +25,7 @@
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vue-eslint-parser": "^8.0.1",
+    "vue-router": "^4.0.12",
     "vue-tsc": "^0.3.0"
   }
 }
