@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite-ssr dev",
     "build": "vue-tsc --noEmit && vite-ssr build",
-    "serve": "vite preview",
+    "serve": "node server/main.js",
     "lint": "eslint --ignore-path .gitignore --ext vue,ts,js .",
     "lint:fix": "eslint --fix --ignore-path .gitignore --ext vue,ts,js .",
     "format": "prettier --ignore-path .gitignore --write {*,**/*,**/**/*}.{ts,md,json} {**/*,**/**/*}.vue",
@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@vueuse/head": "^0.7.2",
+    "express": "^4.17.1",
+    "node-fetch": "^3.1.0",
     "vite-ssr": "^0.14.3",
     "vue": "^3.2.23"
   },
