@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import viteSSR from 'vite-ssr'
+import routes from './routes'
+import { createHead, Head } from '@vueuse/head'
 
-createApp(App).use(router).mount('#app')
+export default viteSSR(App, { routes }, ({ app }) => {
+  const head = createHead()
+  app.use(head)
+  app.component(Head.name, Head)
+
+  return { head }
+})
