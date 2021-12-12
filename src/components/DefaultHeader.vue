@@ -5,8 +5,12 @@
       <span>NextChat</span>
     </div>
     <div class="header__access">
-      <router-link v-if="$route.path !== '/signin'" to="/signin">Iniciar Sesión</router-link>
-      <router-link v-if="$route.path !== '/signup'" to="/signup">Registrarse</router-link>
+      <router-link v-if="$route.path !== '/signin'" to="/signin"
+        >Iniciar Sesión</router-link
+      >
+      <router-link v-if="$route.path !== '/signup'" to="/signup"
+        >Registrarse</router-link
+      >
     </div>
   </header>
 </template>
@@ -21,7 +25,7 @@
   .header__mask {
     display: flex;
     align-items: center;
-  justify-content: space-between;
+    justify-content: space-between;
 
     img {
       max-width: 48px;
@@ -29,7 +33,7 @@
     }
 
     span {
-      color: #3F51B5;
+      color: #3f51b5;
       font-size: 30px;
       font-weight: 640;
     }
@@ -37,8 +41,8 @@
 
   .header__access a {
     text-decoration: none;
-    color: #3F51B5;
-    border: 1px solid #3F51B5;
+    color: #3f51b5;
+    border: 1px solid #3f51b5;
     padding: 0.7rem;
     border-radius: 2rem;
     font-weight: 470;
