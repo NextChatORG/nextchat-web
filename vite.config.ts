@@ -6,6 +6,7 @@ import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
   plugins: [viteSSR(), vue(), legacy()],
+  envPrefix: 'NC_',
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, './src') },

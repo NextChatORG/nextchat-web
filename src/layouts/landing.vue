@@ -35,7 +35,7 @@
     <meta name="twitter:site" content="@NextChatORG" />
     <meta name="twitter:creator" content="@NextChatORG" />
   </Head>
-  <default-header></default-header>
+  <nc-landing-header></nc-landing-header>
   <main>
     <slot></slot>
   </main>
@@ -43,7 +43,7 @@
 
 <script setup lang="ts">
 import { defineProps } from 'vue'
-import DefaultHeader from '@/components/DefaultHeader.vue'
+import NcLandingHeader from '@/components/NcLandingHeader.vue'
 
 const props = defineProps({
   title: {
